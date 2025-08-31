@@ -63,21 +63,24 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Setting:
+**Setting:**
+
 A royal hall at night. The story has three short scenes: the maid with fruit, the queen with wine, and the general with a sword. Each scene reveals a motive and a plan to kill the King, with light effects used to build the mood and drive the drama.
 
-Players:
+**Players:**
 
 The King: the main target of all three plots.
 The Maid: a servant who wants revenge for her family.
 The Queen: once loved the King, now hates him after betrayal.
 The General: once a loyal soldier, now a rebel.
-Activity:
+
+**Activity:**
 
 The Maid’s Poisoned Fruit — At the banquet, the maid brings a glowing fruit bowl. The King reaches for the fruit, the light turns red, but he pulls back. The glow fades.
 The Queen’s Poisoned Wine — The Queen raises a cup of glowing purple wine. She offers it to the King, his hand moves close, the light turns red, but he refuses to drink. The glow fades.
 The Rebel’s Blade — The general walks forward and takes his sword. The sword glows white, then red. He draws it, the King dies, and his crown falls.
-Goals:
+
+**Goals:**
 
 Maid: to poison the King and take revenge.
 Queen: to kill the King with poisoned wine.
@@ -92,6 +95,17 @@ King: to survive these threats and keep his rule.
 
 \*\***Summarize feedback you got here.**\*\*
 
+Feedback Summary
+
+- The metaphor of soldiers (playing cards) plotting to assassinate the king is imaginative and engaging. It connects well to a narrative-driven lighting performance.
+
+- Make sure the sequence of events is clearly mapped out (e.g., soldiers gather → assassination attempt → king’s downfall → final lighting effect).
+
+- The idea of lighting changes to represent the assassination (darkness → tension → sudden brightness when the king is killed) is strong. Consider using color symbolism (e.g., red for danger, white for climax, black for death).
+
+- If possible, allow some input. That would make the project more dynamic and immersive.
+
+- Using three poker cards is simple and effective, but think about how to make each step clearly distinguishable with lights alone — otherwise, some transitions might feel abrupt.
 
 ## Part B. Act out the Interaction
 
@@ -99,8 +113,11 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Yes — on paper the assassination scene looked very dramatic, but when we acted it out in pantomime it felt harder to show tension clearly. In our storyboard, we used 2D comic-style expressions and added thought bubbles to convey the characters’ emotions. When we actually start shooting, what we need to present is a 3D scene. We might have to deal with lacking the depiction of the characters' expressions and postures to enrich this 3D performance. We need to make comprehensive preparations covering various aspects, such as changes in lighting, the portrayal of character states, and if possible, using simple props to enable the audience to understand the complete storyline.
+
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
 
+Yes - We came up with using poker cards to represent each character. The lighting can help the audience understand the atmosphere of the story's progression. We also decided to add background music to help drive the plot forward. To avoid overshadowing the main content, we wanted to highlight the significance of lighting in the performance. For this reason, we chose not to include voiceovers in the video. Instead, we used black-and-white subtitles, allowing the audience to immerse themselves in the story while clearly following its development.
 
 ## Part C. Prototype the device
 
@@ -114,13 +131,19 @@ If you run into technical issues with this tool, you can also use a light switch
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
+We were able to set it up and get it running very quickly, which made the process smooth and efficient. The instructions were clear and the tool was intuitive to use. We found it really cool that the phone could not only simulate a “light” but also be controlled to produce sound. This gave us extra flexibility and opened up more creative possibilities for our project. Overall, it saved us time on technical setup and allowed us to focus more on the design and storytelling.
+
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+In our first recording attempt, we prepared to manually control the lighting transitions. In the first two assassination scenes, where the King survives, we used a slow color shift in the lights to suggest rising tension before fading back to normal. In the final scene, to emphasize the success of the assassination, we highlighted the sword with a bright white glow followed by a rapid shift to red flashing light, underscoring the dramatic climax of the King’s death.
+
+In the first try-out scene, where the Maid offers the poisoned fruit bowl to the King, the glow was controlled from the laptop and shifted in real time on the phone screen. At first, the bowl glowed green, but as the King reached out his hand, it turned red—showing that if he ate it, he would be poisoned. However, because of his suspicion, he pulled back, and the red glow faded away.
+
+[Watch the set-up video + follow up work on Youtube」([docs/CONTRIBUTING.md](https://www.youtube.com/watch?v=f_kJ1HM1AX8))
 
 \*\***Show the follow-up work here.**\*\*
 
