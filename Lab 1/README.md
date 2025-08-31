@@ -2,15 +2,9 @@
 
 # Staging Interaction
 
+
+
 **Hester(qinrui) Li, Joy Sun, Huiying Zhan**
-
-In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
-
-There is no actor that plays Tinkerbell--her existence in the play comes from the interactions that the other characters have with her.
-
-For lab this week, we draw on this and other inspirations from theatre to stage interactions with a device where the main mode of display/output for the interactive device you are designing is lighting. You will plot the interaction with a storyboard, and use your computer and a smartphone to experiment with what the interactions will look and feel like. 
-
-_Make sure you read all the instructions and understand the whole of the laboratory activity before starting!_
 
 
 
@@ -57,6 +51,8 @@ E) [Costume the device](#part-e-costume-the-device)
 F) [Record the interaction](#part-f-record)
 
 Labs are due on Mondays. Make sure this page is linked to on your main class hub page.
+
+---
 
 ## Part A. Plan 
 
@@ -124,13 +120,6 @@ Yes - We came up with using poker cards to represent each character. The lightin
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/IRL-CT/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
@@ -169,32 +158,28 @@ In the first try-out scene, where the Maid offers the poisoned fruit bowl to the
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
 
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
-Costume 1: Fruit Bowl
+Costume 1: Fruit Bowl  
+<img src="Fruit%20Costume.JPG" alt="Fruit Costume" width="300"/>  
 
-![Fruit Costume](Fruit%20Costume.JPG)
+---
 
+Costume 2: Wine Cup  
+<img src="Wine%20Costume.jpg" alt="Wine Costume" width="300"/>  
 
-Costume 2: Wine Cup
+---
 
-![Wine Costume](Wine%20Costume.jpg)
-
-
-
-Costume 3: Knife
-
-![Knife Costume](Knife%20Costume.JPG)
+Costume 3: Knife  
+<img src="Knife%20Costume.JPG" alt="Knife Costume" width="300"/>  
 
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
-We were concerned that if we used packaging materials to directly turn the phone into objects like a fruit plate or a sword, the light would not shine through clearly. Therefore, we decided to use white paper and draw the shapes of a fruit plate, a wine glass, and a sword on it, adding color afterward. The white paper allows the original light colors to remain visible without distortion, while also helping to better conceal the phone itself.
+We were concerned that if we used packaging materials to directly turn the phone into objects like a fruit plate or a sword, the light would not shine through clearly. Therefore, we decided to use white paper and draw the shapes of a fruit plate, a wine glass, and a sword on it, adding color afterward. The white paper allows the original light colors to remain visible without distortion, while also helping to better conceal the phone itself. We also choose to shoot the video at a dark place in order to make sure the light changing is obvious.
 
 ## Part F. Record
 
@@ -234,6 +219,8 @@ Working with lighting also made me think more broadly: an interactive device tha
 
 Through this project, I not only learned technical skills but also gained a deeper appreciation for the way design and technology can affect human experience. It reminded me that sometimes, even small details—like a beam of light—can completely change the meaning of a performance or a moment in daily life.
 
+
+---
 
 # Staging Interaction, Part 2 
 
