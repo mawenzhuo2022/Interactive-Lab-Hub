@@ -70,8 +70,11 @@ A royal hall at night. The story has three short scenes: the maid with fruit, th
 **Players:**
 
 The King: the main target of all three plots.
+
 The Maid: a servant who wants revenge for her family.
+
 The Queen: once loved the King, now hates him after betrayal.
+
 The General: once a loyal soldier, now a rebel.
 
 **Activity:**
@@ -159,6 +162,7 @@ Think about the setting of the device: is the environment a place where the devi
 Costume 1: Fruit Bowl
 
 ![Fruit Costume](Fruit%20Costume.JPG)
+
 
 Costume 2: Wine Cup
 
