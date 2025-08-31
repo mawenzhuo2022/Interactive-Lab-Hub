@@ -2,7 +2,7 @@
 
 # Staging Interaction
 
-**Hester Li, Joy Sun, Huiying Zhan**
+**Hester(qinrui) Li, Joy Sun, Huiying Zhan**
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -163,16 +163,19 @@ Costume 1: Fruit Bowl
 
 ![Fruit Costume](Fruit%20Costume.JPG)
 
+![with maid](with%20maid.jpg)
 
 Costume 2: Wine Cup
 
 ![Wine Costume](Wine%20Costume.jpg)
 
+![with queen](with%20queen.jpg)
 
 Costume 3: Knife
 
 ![Knife Costume](Knife%20Costume.JPG)
 
+![with general](with%20general.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
@@ -185,8 +188,18 @@ We were concerned that if we used packaging materials to directly turn the phone
 
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
+For this lab, I (Qinrui Li) worked together with Huiying Zhan and Jiayi Sun. Huiying came up with the main storyline, while Jiayi refined the script and did most of the writing. Huiying and I focused on sketching the storyboards to visualize the flow. All three of us contributed to building the props. During filming, Jiayi was the videographer and later did the editing, I was in charge of the lighting, and Huiying directed the actors’ movements and blocking.
+
+We really enjoyed the time we spent making props and shooting together, and this project gave us the chance not only to collaborate closely but also to become friends. Each of us brought something essential to the team, and the project wouldn’t have been the same without everyone’s effort. We’d also like to acknowledge the support of GitHub resources, the Tinkerbelle tool, and iPhone recording software.
+
+**additinal reflection**
+
+This project made me realize how crucial lighting is in performance. Even with limited equipment and props, the atmosphere and rhythm of a scene can be conveyed almost entirely through the use of light. Subtle changes in brightness, color, or direction are enough to shape the audience’s emotional experience and guide their focus.
+
+Working with lighting also made me think more broadly: an interactive device that can control light would definitely play an important role in many aspects of everyday life. Beyond artistic expression, lighting can influence mood, productivity, and even our sense of safety and comfort. It can transform a space, set the tone for communication, or even act as a medium for storytelling.
+
+Through this project, I not only learned technical skills but also gained a deeper appreciation for the way design and technology can affect human experience. It reminded me that sometimes, even small details—like a beam of light—can completely change the meaning of a performance or a moment in daily life.
 
 
 # Staging Interaction, Part 2 
