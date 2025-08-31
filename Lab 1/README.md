@@ -158,16 +158,16 @@ Think about the setting of the device: is the environment a place where the devi
 
 Costume 1: Fruit Bowl
 
-![Fruit Costume](Fruit Costume.png)
+![Fruit Costume](FruitCostume.jpg)
 
 Costume 2: Wine Cup
 
-![Wine Costume](Wine Costume.png)
+![Wine Costume](WineCostume.jpg)
 
 
 Costume 3: Knife
 
-![ knife ](Knife Costume.png)
+![ knife ](KnifeCostume.jpg)
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
