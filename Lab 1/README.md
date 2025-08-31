@@ -158,7 +158,7 @@ Think about the setting of the device: is the environment a place where the devi
 
 Costume 1: Fruit Bowl
 
-![Fruit Costume](Fruit%20Costume.jpg)
+![Fruit Costume](Fruit%20Costume.JPG)
 
 Costume 2: Wine Cup
 
