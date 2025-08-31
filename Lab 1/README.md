@@ -146,7 +146,7 @@ In our first recording attempt, we prepared to manually control the lighting tra
 
 In the first try-out scene, where the Maid offers the poisoned fruit bowl to the King, the glow was controlled from the laptop and shifted in real time on the phone screen. At first, the bowl glowed green, but as the King reached out his hand, it turned red—showing that if he ate it, he would be poisoned. However, because of his suspicion, he pulled back, and the red glow faded away.
 
-[![Watch the set-up video + follow-up work on YouTube](https://img.youtube.com/vi/f_kJ1HM1AX8/0.jpg)](https://www.youtube.com/watch?v=f_kJ1HM1AX8)
+[![Watch the set-up video](https://img.youtube.com/vi/f_kJ1HM1AX8/0.jpg)](https://www.youtube.com/watch?v=f_kJ1HM1AX8)
 
  \*\***Show the follow-up work here.**\*\*
 
@@ -197,6 +197,24 @@ We were concerned that if we used packaging materials to directly turn the phone
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+Overall Prototyped
+
+[![prototyped interaction](https://youtu.be/DuThEwBd8EE)](https://youtu.be/DuThEwBd8EE)
+
+Scene 1 - The Maid’s Poisoned Fruit
+
+[![Scene 1 - The Maid’s Poisoned Fruit](https://youtu.be/yKgqXZjnT2M)](https://youtu.be/yKgqXZjnT2M)
+
+
+
+Scene 2 - The Queen’s Poisoned Wine
+
+[![Scene 2 - The Queen’s Poisoned Wine](https://www.youtube.com/watch?v=wbVWJKHsGkw)](https://www.youtube.com/watch?v=wbVWJKHsGkw)
+
+
+Scene 3 - The Rebel’s Drawn Blade
+
+[![Scene 3 - The Rebel’s Drawn Blade](https://www.youtube.com/watch?v=w_AuT5ix660)](https://www.youtube.com/watch?v=w_AuT5ix660)
 
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
