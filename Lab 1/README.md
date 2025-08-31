@@ -162,12 +162,12 @@ Costume 1: Fruit Bowl
 
 Costume 2: Wine Cup
 
-![WineCostume](WineCostume.jpg)
+![Wine Costume](Wine%20Costume.jpg)
 
 
 Costume 3: Knife
 
-![knife](KnifeCostume.JPG)
+![Knife Costume](Knife%20Costume.JPG)
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
