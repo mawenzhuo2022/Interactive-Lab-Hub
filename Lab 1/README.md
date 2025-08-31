@@ -86,7 +86,7 @@ King: to survive these threats and keep his rule.
 
 \*\***Include pictures of your storyboards here**\*\*
 
-![storyboard](./images/example.png)
+![storyboard](storyboards.png)
 
 
 
