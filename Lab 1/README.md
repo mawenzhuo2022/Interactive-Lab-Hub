@@ -156,14 +156,29 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+Costume 1: Fruit Bowl
+
+![Fruit Costume](FruitCostume.png)
+
+Costume 2: Wine Cup
+
+![Wine Costume](WineCostume.png)
+
+
+Costume 3: Knife
+
+![ knife ](KnifeCostume.png)
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+We were concerned that if we used packaging materials to directly turn the phone into objects like a fruit plate or a sword, the light would not shine through clearly. Therefore, we decided to use white paper and draw the shapes of a fruit plate, a wine glass, and a sword on it, adding color afterward. The white paper allows the original light colors to remain visible without distortion, while also helping to better conceal the phone itself.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+
+
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
