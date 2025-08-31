@@ -150,19 +150,22 @@ In the first try-out scene, where the Maid offers the poisoned fruit bowl to the
 
  \*\***Show the follow-up work here.**\*\*
 
- Characters and their weapons w/ light on
+ - overall stage set-up  
 
-**Maid**
+<img src="overall%20setting.jpg" alt="overall setting" width="400"/>  
 
-![with maid](with%20maid.jpg)
+---
 
-**Queen**
+- Characters and their weapons w/ light on  
 
-![with queen](with%20queen.jpg)
+**Maid**  
+<img src="with%20maid.jpg" alt="with maid" width="300"/>  
 
-**General**
+**Queen**  
+<img src="with%20queen.jpg" alt="with queen" width="300"/>  
 
-![with general](with%20general.jpg)
+**General**  
+<img src="with%20general.jpg" alt="with general" width="300"/>  
 
 ## Part E. Costume the device
 
