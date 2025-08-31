@@ -143,7 +143,7 @@ In our first recording attempt, we prepared to manually control the lighting tra
 
 In the first try-out scene, where the Maid offers the poisoned fruit bowl to the King, the glow was controlled from the laptop and shifted in real time on the phone screen. At first, the bowl glowed green, but as the King reached out his hand, it turned red—showing that if he ate it, he would be poisoned. However, because of his suspicion, he pulled back, and the red glow faded away.
 
-[Watch the set-up video + follow up work on Youtube」([docs/CONTRIBUTING.md](https://www.youtube.com/watch?v=f_kJ1HM1AX8))
+[![Watch the set-up video + follow-up work on YouTube](https://img.youtube.com/vi/f_kJ1HM1AX8/0.jpg)](https://www.youtube.com/watch?v=f_kJ1HM1AX8)
 
 \*\***Show the follow-up work here.**\*\*
 
