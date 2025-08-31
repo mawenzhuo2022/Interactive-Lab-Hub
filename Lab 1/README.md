@@ -140,7 +140,7 @@ We were able to set it up and get it running very quickly, which made the proces
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
-\*\***Include your first attempts at recording the set-up video here.**\*\* + \*\***Show the follow-up work here.**\*\*
+\*\***Include your first attempts at recording the set-up video here.**\*\* 
 
 In our first recording attempt, we prepared to manually control the lighting transitions. In the first two assassination scenes, where the King survives, we used a slow color shift in the lights to suggest rising tension before fading back to normal. In the final scene, to emphasize the success of the assassination, we highlighted the sword with a bright white glow followed by a rapid shift to red flashing light, underscoring the dramatic climax of the King’s death.
 
@@ -148,8 +148,21 @@ In the first try-out scene, where the Maid offers the poisoned fruit bowl to the
 
 [![Watch the set-up video + follow-up work on YouTube](https://img.youtube.com/vi/f_kJ1HM1AX8/0.jpg)](https://www.youtube.com/watch?v=f_kJ1HM1AX8)
 
+ \*\***Show the follow-up work here.**\*\*
 
+ Characters and their weapons w/ light on
 
+**Maid**
+
+![with maid](with%20maid.jpg)
+
+**Queen**
+
+![with queen](with%20queen.jpg)
+
+**General**
+
+![with general](with%20general.jpg)
 
 ## Part E. Costume the device
 
@@ -163,19 +176,18 @@ Costume 1: Fruit Bowl
 
 ![Fruit Costume](Fruit%20Costume.JPG)
 
-![with maid](with%20maid.jpg)
 
 Costume 2: Wine Cup
 
 ![Wine Costume](Wine%20Costume.jpg)
 
-![with queen](with%20queen.jpg)
+
 
 Costume 3: Knife
 
 ![Knife Costume](Knife%20Costume.JPG)
 
-![with general](with%20general.jpg)
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
