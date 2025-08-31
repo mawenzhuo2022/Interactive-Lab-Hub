@@ -197,24 +197,24 @@ We were concerned that if we used packaging materials to directly turn the phone
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
-Overall Prototyped
+Overall Prototyped  
 
-[![prototyped interaction](https://youtu.be/DuThEwBd8EE)](https://youtu.be/DuThEwBd8EE)
+[![prototyped interaction](https://img.youtube.com/vi/DuThEwBd8EE/0.jpg)](https://youtu.be/DuThEwBd8EE)  
 
-Scene 1 - The Maid’s Poisoned Fruit
+---
 
-[![Scene 1 - The Maid’s Poisoned Fruit](https://youtu.be/yKgqXZjnT2M)](https://youtu.be/yKgqXZjnT2M)
+### Scene 1 - The Maid’s Poisoned Fruit
+[![Scene 1 - The Maid’s Poisoned Fruit](https://img.youtube.com/vi/yKgqXZjnT2M/0.jpg)](https://youtu.be/yKgqXZjnT2M)  
 
+---
 
+### Scene 2 - The Queen’s Poisoned Wine
+[![Scene 2 - The Queen’s Poisoned Wine](https://img.youtube.com/vi/wbVWJKHsGkw/0.jpg)](https://www.youtube.com/watch?v=wbVWJKHsGkw)  
 
-Scene 2 - The Queen’s Poisoned Wine
+---
 
-[![Scene 2 - The Queen’s Poisoned Wine](https://www.youtube.com/watch?v=wbVWJKHsGkw)](https://www.youtube.com/watch?v=wbVWJKHsGkw)
-
-
-Scene 3 - The Rebel’s Drawn Blade
-
-[![Scene 3 - The Rebel’s Drawn Blade](https://www.youtube.com/watch?v=w_AuT5ix660)](https://www.youtube.com/watch?v=w_AuT5ix660)
+### Scene 3 - The Rebel’s Drawn Blade
+[![Scene 3 - The Rebel’s Drawn Blade](https://img.youtube.com/vi/w_AuT5ix660/0.jpg)](https://www.youtube.com/watch?v=w_AuT5ix660)  
 
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
