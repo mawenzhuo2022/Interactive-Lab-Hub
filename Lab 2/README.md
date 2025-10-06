@@ -192,6 +192,17 @@ clock assignment code: [game-clock.py](./game-clock.py)
 
 ![Verplank diagram](Verplank_diagram.png)
 
+Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
+
+Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
+
+Please sketch/diagram your clock idea. (Try using a [Verplank diagram](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf))!
+
+**We strongly discourage and will reject the results of literal digital or analog clock display.**
+
+
+\*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
+
 
 ## Assignment that was formerly Part F. 
 ## Make a short video of your modified barebones PiClock
