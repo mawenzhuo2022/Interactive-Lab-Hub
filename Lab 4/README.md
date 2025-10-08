@@ -42,9 +42,8 @@ Set up photo:
 
 <img src="Capacitive_Sensing_setup.jpg" alt="Capacitive Sensing Setup" width="400">
 
-
 #### Test for directly touching Twizzler:
-Video:
+Video: [https://drive.google.com/file/d/1jtIyU4fzgyAFQZ10SFjRVbTX_9X6H59N/view?usp=sharing](https://drive.google.com/file/d/1jtIyU4fzgyAFQZ10SFjRVbTX_9X6H59N/view?usp=sharing)
 
 log info:
 
@@ -66,7 +65,8 @@ Twizzler 9 touched!
 
 #### Test for touching Twizzler connecting to a conductor:
 
-Video:
+Video:[https://drive.google.com/file/d/1I-tb-lTlRMRaVxKZEWBnxo6AMztpMPcA/view?usp=drive_link](https://drive.google.com/file/d/1I-tb-lTlRMRaVxKZEWBnxo6AMztpMPcA/view?usp=drive_link)
+
 
 log info:
 
@@ -91,7 +91,7 @@ Set up photo:
 
 #### Test for proximity_test.py:
 
-Video:
+Video:[https://drive.google.com/file/d/1cLOCBwlsfwFD6SLhqpRPtK6jyAotpeGS/view?usp=drive_link](https://drive.google.com/file/d/1cLOCBwlsfwFD6SLhqpRPtK6jyAotpeGS/view?usp=drive_link)
 
 log info:
 
@@ -177,7 +177,7 @@ log info:
 
 #### Test for python gesture_test.py
 
-Video:
+Video:[https://drive.google.com/file/d/1iwvdlU0op5dFtTBxByexz7uFNlAtNyES/view?usp=drive_link](https://drive.google.com/file/d/1iwvdlU0op5dFtTBxByexz7uFNlAtNyES/view?usp=drive_link)
 
 log info:
 
@@ -192,7 +192,7 @@ up
 
 #### Test for python python color_test.py
 
-Video:
+Video:[https://drive.google.com/file/d/1RKQZQ6ctD7I9oUKpsX780PhnJvhb6WkC/view?usp=drive_link](https://drive.google.com/file/d/1RKQZQ6ctD7I9oUKpsX780PhnJvhb6WkC/view?usp=drive_link)
 
 log info:
 
@@ -224,7 +224,7 @@ Set up photo:
 
 <img src="Rotary_Encoder_setup.jpg" alt="Rotary Encoder Setup" width="400">
 
-Video:
+Video:[https://drive.google.com/file/d/1o-7zOtNsHrdKv-IvUMFV6fjNV6xq_pDC/view?usp=drive_link](https://drive.google.com/file/d/1o-7zOtNsHrdKv-IvUMFV6fjNV6xq_pDC/view?usp=drive_link)
 
 log info:
 
@@ -269,7 +269,8 @@ Set up photo:
 
 <img src="Joystick_setup.jpg" alt="Joystick Setup" width="400">
 
-Video:
+Video:[https://drive.google.com/file/d/1SOgJV07gCmHdvlncBlJw9fFS8DV8Rsjm/view?usp=drive_link](https://drive.google.com/file/d/1SOgJV07gCmHdvlncBlJw9fFS8DV8Rsjm/view?usp=drive_link)
+
 
 log info:
 
@@ -310,7 +311,7 @@ Set up photo:
 
 <img src="Distance_Sensor_setup.jpg" alt="Distance Sensor Setup" width="400">
 
-Video:
+Video:[https://drive.google.com/file/d/1cSJWj98R7OTybSJ-Pzs8wXq9cjfAnhoj/view?usp=drive_link](https://drive.google.com/file/d/1cSJWj98R7OTybSJ-Pzs8wXq9cjfAnhoj/view?usp=drive_link)
 
 log info:
 
