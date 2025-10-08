@@ -40,7 +40,7 @@ F) [Record the interaction](#part-f)
 ### Test for Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 Set up photo:
 
-Test for directly touching Twizzler:
+#### Test for directly touching Twizzler:
 Video:
 
 log info:
@@ -61,7 +61,7 @@ Twizzler 9 touched!
 Twizzler 9 touched!
 ```
 
-Test for touching Twizzler connecting to a conductor:
+#### Test for touching Twizzler connecting to a conductor:
 
 Video:
 
@@ -84,7 +84,7 @@ Twizzler 9 touched!
 
 Set up photo:
 
-Test for proximity_test.py:
+#### Test for proximity_test.py:
 
 Video:
 
@@ -170,7 +170,7 @@ log info:
 0
 ```
 
-Test for python gesture_test.py
+#### Test for python gesture_test.py
 
 Video:
 
@@ -185,7 +185,7 @@ right
 up
 ```
 
-Test for python python color_test.py
+#### Test for python python color_test.py
 
 Video:
 
