@@ -39,7 +39,8 @@ F) [Record the interaction](#part-f)
 ### Part A
 ### Test for Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 Set up photo:
-![Capacitive Sensing Setup](Capacitive_Sensing_setup.jpg)
+<img src="Capacitive_Sensing_setup.jpg" alt="Capacitive Sensing Setup" width="400">
+
 
 #### Test for directly touching Twizzler:
 Video:
