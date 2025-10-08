@@ -39,6 +39,7 @@ F) [Record the interaction](#part-f)
 ### Part A
 ### Test for Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 Set up photo:
+
 <img src="Capacitive_Sensing_setup.jpg" alt="Capacitive Sensing Setup" width="400">
 
 
@@ -85,7 +86,8 @@ Twizzler 9 touched!
 #### Test for Light/Proximity/Gesture sensor (APDS-9960)
 
 Set up photo:
-![LightProximityGesture Sensor Setup](LightProximityGesture_sensor_setup.jpg)
+
+<img src="LightProximityGesture_sensor_setup.jpg" alt="LightProximityGesture Sensor Setup" width="400">
 
 #### Test for proximity_test.py:
 
@@ -219,7 +221,8 @@ light lux 279.10181000000006
 #### Test for Rotary Encoder 
 
 Set up photo:
-![Rotary Encoder Setup](Rotary_Encoder_setup.jpg)
+
+<img src="Rotary_Encoder_setup.jpg" alt="Rotary Encoder Setup" width="400">
 
 Video:
 
@@ -263,7 +266,8 @@ Position: 14
 #### Test for Joystick 
 
 Set up photo:
-![Joystick Setup](Joystick_setup.jpg)
+
+<img src="Joystick_setup.jpg" alt="Joystick Setup" width="400">
 
 Video:
 
@@ -303,7 +307,8 @@ X: 524, Y: 514, Button: 1
 #### Test for Distance Sensor
 
 Set up photo:
-![Distance Sensor Setup](Distance_Sensor_setup.jpg)
+
+<img src="Distance_Sensor_setup.jpg" alt="Distance Sensor Setup" width="400">
 
 Video:
 
