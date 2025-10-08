@@ -84,7 +84,7 @@ Twizzler 9 touched!
 #### Test for Light/Proximity/Gesture sensor (APDS-9960)
 
 Set up photo:
-![Light Proximity Gesture Sensor Setup](Light:Proximity:Gesture_sensor_setup.jpg)
+![Light Proximity Gesture Sensor Setup](LightProximityGesture_sensor_setup.jpg)
 
 #### Test for proximity_test.py:
 
