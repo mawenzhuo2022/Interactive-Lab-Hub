@@ -419,9 +419,11 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 #### FeedBack
 
 "The design of the controller is really new which I haven't seen and expected. I really like this design and demo. I think I will buy one to place on my desk which is interesting. While I think it may be a good idea to have some more functions as well. It will be good to make users can design the functions by themselves as there are so many units you can use. Also, the screen touch may be another improvement in the future. But in all I like it!"
+
 ——Yibin Wei
 
 ""
+
 ——Dean Xu
 
 
