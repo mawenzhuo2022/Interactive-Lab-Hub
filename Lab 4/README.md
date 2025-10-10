@@ -422,7 +422,7 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 
 ——Yibin Wei
 
-""
+"In this era of voice commands and smart touchscreens, going back to controlling music with a joystick feels wonderfully nostalgic — that mechanical feedback actually makes listening to music more tangible and satisfying. As for the design, I have a small suggestion: what if you place the pad directly beneath the joystick? That way, users could perform multi-dimensional actions — up, down, left, right, and press — all from a single touchpoint. But then again, don’t many smart speakers already offer similar functionality?"
 
 ——Dean Xu
 
