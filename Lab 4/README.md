@@ -440,6 +440,7 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 ## Design:
 
 ## Prototype:
+![Interactive Player v2](./interactive_player_v2.png)
 
 ## Workflow:
 
@@ -575,6 +576,8 @@ Initially, we use the Design from first part
 ![](prototype.jpg)
 
 ## Prototype:
+<img src="./interactive_player_v1.png" alt="Interactive Player v1" width="700">
+
 
 ## Workflow:
 
