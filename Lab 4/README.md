@@ -558,7 +558,13 @@ When the joystick became primary (controlling music) and touch secondary (visual
 
 ## Peer Feedback:
 
-""
+"This music player, which combines a touchpad and joystick, is fantastic. The user-computer interaction is incredibly smooth, and the colorful lights that dance with the music add to the ambiance of listening. I'm looking forward to your final design."
+
+——Dean Xu
+
+"I really like the design, it is what I want. It is greatly better than the version 1 and has more innovations! I do will buy one!"
+
+——Fei Xu
 
 
 ---
