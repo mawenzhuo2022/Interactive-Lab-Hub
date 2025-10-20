@@ -438,9 +438,13 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 # Interactive Player:
 
 ## Design:
+![design](./design)
 
 ## Prototype:
 ![Interactive Player v2](./interactive_player_v2.png)
+
+## Interaction
+![interation](./interaction)
 
 ## Workflow:
 
