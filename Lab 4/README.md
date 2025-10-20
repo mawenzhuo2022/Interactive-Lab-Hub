@@ -438,7 +438,7 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 # Interactive Player:
 
 ## Design:
-![design](./design.png)
+<img src="./design.png" alt="design" width="400">
 
 ## Prototype:
 ![Interactive Player v2](./interactive_player_v2.png)
@@ -449,7 +449,7 @@ For the prototype, we chose the Laptop design because it offers a clear and prac
 ## Workflow:
 
 In all, it is a Player to play music, music can be both mp3 and wav.
-Music is stored in [music](music)
+Music is stored in [./music](music)
 
 1. Screen: Screen shows the Song name, Artist, Volume and playing status.
 
