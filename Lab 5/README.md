@@ -136,6 +136,7 @@ python moondream_simple.py
 This will capture an image from your webcam and let you ask questions about it in natural language. Note that vision-language models are slower than classification models (responses may take up to minutes on a Raspberry Pi). There are newer models like [LFM2-VL](https://huggingface.co/LiquidAI/LFM2-VL-450M-GGUF), but many are very recent and not yet optimized for embedded devices.
 
 Test photo:
+
 <img src="captured_image.jpg" alt="hand pose example" width="400"/>
 
 Logs for moondream_simple.py:
@@ -164,7 +165,7 @@ Ask questions about the image (or 'quit' to exit):
 You: quit
 ```
 
-**Design consideration**: Think about how slower response times change your interaction design. What kinds of observant systems benefit from thoughtful, delayed responses rather than real-time classification? Consider systems that monitor over longer time periods or provide periodic summaries rather than instant feedback.
+**Design consideration**: Slower response times did not really change our design, we may not have that scenario which can include the slower response. Teachable Machines will fit out project more. Library occupancy will be a good idea to use this tech, take a picture every hour and publish the "free time list + heat map" the next day. Or Dormitory energy consumption will also benefit from this. Just need to summarizes electricity usage and temperature every day, identifies overcooled/overheated rooms, and provides 3 energy-saving suggestions.
 
 #### Teachable Machines
 Google's [TeachableMachines](https://teachablemachine.withgoogle.com/train) is very useful for prototyping with the capabilities of machine learning. We are using [a python package](https://github.com/MeqdadDev/teachable-machine-lite) with tensorflow lite to simplify the deployment process.
