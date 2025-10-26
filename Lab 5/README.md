@@ -135,6 +135,35 @@ python moondream_simple.py
 
 This will capture an image from your webcam and let you ask questions about it in natural language. Note that vision-language models are slower than classification models (responses may take up to minutes on a Raspberry Pi). There are newer models like [LFM2-VL](https://huggingface.co/LiquidAI/LFM2-VL-450M-GGUF), but many are very recent and not yet optimized for embedded devices.
 
+Test photo:
+<img src="captured_image.jpg" alt="hand pose example" width="400"/>
+
+Logs for moondream_simple.py:
+```
+(.venv) pi@max:~/Interactive-Lab-Hub/Lab 5 $ python moondream_simple.py
+Moondream Simple Vision Demo
+==================================================
+Opening camera...
+Camera warming up...
+Smile! Capturing in 3...
+2...
+1...
+*CLICK*
+Image saved as: captured_image.jpg
+
+Asking Moondream: What do you see in this image? Describe it.
+
+Moondream: 
+The image shows a person wearing glasses and holding up a Casio calculator, which is black with white buttons on the front. The individual appears to be taking a selfie or capturing a moment using their phone's camera. They are standing against a plain white wall, creating an interesting contrast between the subject and background.
+
+There is also a chair visible in the image, positioned behind the person holding the calculator.
+
+
+Ask questions about the image (or 'quit' to exit):
+
+You: quit
+```
+
 **Design consideration**: Think about how slower response times change your interaction design. What kinds of observant systems benefit from thoughtful, delayed responses rather than real-time classification? Consider systems that monitor over longer time periods or provide periodic summaries rather than instant feedback.
 
 #### Teachable Machines
