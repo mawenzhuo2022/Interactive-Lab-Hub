@@ -165,7 +165,7 @@ Ask questions about the image (or 'quit' to exit):
 You: quit
 ```
 
-**Design consideration**: Slower response times did not really change our design, we may not have that scenario which can include the slower response. Teachable Machines will fit out project more. Library occupancy will be a good idea to use this tech, take a picture every hour and publish the "free time list + heat map" the next day. Or Dormitory energy consumption will also benefit from this. Just need to summarizes electricity usage and temperature every day, identifies overcooled/overheated rooms, and provides 3 energy-saving suggestions.
+**Design consideration**: Slower response can help us to catch a photo each minute to check whether people is on the chair and give suggestions to stand up for some time if they have been their for such long time. Just capture the image each minute and give the response to the ollama again to see whether the person is on the chair for such long time. It can also be asynchronous or rotate after the last one is done.
 
 #### Teachable Machines
 Google's [TeachableMachines](https://teachablemachine.withgoogle.com/train) is very useful for prototyping with the capabilities of machine learning. We are using [a python package](https://github.com/MeqdadDev/teachable-machine-lite) with tensorflow lite to simplify the deployment process.
