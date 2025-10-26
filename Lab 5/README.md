@@ -3,6 +3,7 @@
 **Dean Xu - hx332**
 
 **Yoyo Wang - hw867**
+
 ## Prep
 
 1.  Install VNC on your laptop if you have not yet done so. This lab will actually require you to run script on your Pi through VNC so that you can see the video stream. Please refer to the [prep for Lab 2](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/-/Lab%202/prep.md#using-vnc-to-see-your-pi-desktop).
