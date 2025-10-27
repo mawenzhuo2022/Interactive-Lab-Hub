@@ -232,6 +232,8 @@ Example test predictions demonstrating real-time classification of cup states:
 
 #### Storyboard:
 
+<img src="Storyboard.jpg" alt="storyboard" width="700"/>
+
 #### Code:
 
   - [`detect_status.py`](./detect_status.py)
