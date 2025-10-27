@@ -254,8 +254,6 @@ Example test predictions demonstrating real-time classification of cup states:
   
   - Reset rule: standing/away for 4 minutes resets the sitting timer
   
-  - Live timeline plot for the last 24 hours (Sitting=green, Standing=blue, Away=red; alerts marked with a yellow star)
-  
   - Saves images and a plain-text log
 
 #### Requirements:
