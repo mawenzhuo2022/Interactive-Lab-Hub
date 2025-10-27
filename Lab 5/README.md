@@ -232,7 +232,7 @@ Example test predictions demonstrating real-time classification of cup states:
 
 #### Storyboard:
 
-<img src="Storyboard.jpg" alt="storyboard" width="700"/>
+<img src="Storyboard.png" alt="storyboard" width="700"/>
 
 #### Code:
 
