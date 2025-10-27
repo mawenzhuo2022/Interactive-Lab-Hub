@@ -411,7 +411,8 @@ During the lecture, we mentioned questions to help characterize a material:
   A quiet assistant watches gently. Help you to relax after a long time sitting.
   
 
-**\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+### [Human Posture Detection Demo](https://drive.google.com/file/d/1aSC2VUn-aIAdUP2EGUSOeqScTsXTCyj5/view?usp=drive_link): [https://drive.google.com/file/d/1aSC2VUn-aIAdUP2EGUSOeqScTsXTCyj5/view?usp=drive_link](https://drive.google.com/file/d/1aSC2VUn-aIAdUP2EGUSOeqScTsXTCyj5/view?usp=drive_link)
+
 
 ### Part 2.
 
