@@ -314,18 +314,38 @@ In an earlier version of this class students experimented with foundational comp
 ### Part C
 ### Test the interaction prototype
 
-Now flight test your interactive prototype and **note down your observations**:
-For example:
 1. When does it what it is supposed to do?
+   
+   It works quite well when the lighting is normal and the camera can clearly see my full upper body. In those times, it correctly shows “person sitting” or “person standing,” and after 30 minutes of sitting it gives the alert message just like planned.
+   
 1. When does it fail?
+   
+   It fails sometimes when the light is too dim or when I move too fast. It also gets confused if someone walks behind me, because it still detects a person and doesn’t count me as away. Also, when someone is sitting behind me, and I am out of the range of the camera, it will detect people sitting as well.
+   
 1. When it fails, why does it fail?
+
+  Mostly because the image model doesn’t have enough data for low-light or side-angle postures. Also the background detection is very simple—it just looks for any human shape, so extra movement or other people cause wrong classification.
+   
 1. Based on the behavior you have seen, what other scenarios could cause problems?
+
+  When the camera angle is wrong, the camera can't see the chair behind, when I wear dark clothes on a dark background
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
+
+  Not really, because the system doesn’t show confidence or warnings.
+   
 1. How bad would they be impacted by a miss classification?
+
+  Not serious, but they might get wrong alerts or miss the reminder to stand up.
+
 1. How could change your interactive system to address this?
+
+  Add a confidence display or a short message explaining the reason of detection. Also change direction or add more directions. If one of them shows that the person is not sitting, then it get the result the person is not sitting.
+   
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+   Add asynchronous Ollama API call, better light correction, add more directions and camera numbers. 
 
 ### Part D
 ### Characterize your own Observant system
@@ -333,12 +353,33 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+
+  Detect human posture and remind breaks.
+
 * What is a good environment for X?
+
+  Bright room, single user, clear background. No other people around.
+
 * What is a bad environment for X?
+
+  Dark room, multiple people, or moving background.
+
 * When will X break?
+
+  When light is too low or camera is blocked.
+
 * When it breaks how will X break?
+
+  It stops updating or keeps showing wrong state.
+
 * What are other properties/behaviors of X?
+
+  It runs automatically and logs time data. And automatically give alerts through speakers.
+
 * How does X feel?
+
+  A quiet assistant watches gently. Help you to relax after a long time sitting.
+  
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
