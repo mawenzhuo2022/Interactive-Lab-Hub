@@ -206,41 +206,41 @@ In an earlier version of this class students experimented with foundational comp
 
 #### Code:
 
-[`detect_status.py`](./detect_status.py)
+  - [`detect_status.py`](./detect_status.py)
 
 #### Description:
 
-  A Python script that captures a webcam photo every 2 minutes, classifies posture as Sitting / Standing / Away, and plays an audio alert after 30 minutes of continuous sitting. Uses a two-step pipeline:
+  - A Python script that captures a webcam photo every 2 minutes, classifies posture as Sitting / Standing / Away, and plays an audio alert after 30 minutes of continuous sitting. Uses a two-step pipeline:
   
-  Moondream generates a natural-language description of the image
+  - Moondream generates a natural-language description of the image
   
-  phi3:mini classifies the posture from that description.
+  - phi3:mini classifies the posture from that description.
   
 #### Features：
   
-  Automatic capture every 2 minutes
+  - Automatic capture every 2 minutes
   
-  Posture states: sitting / standing / away
+  - Posture states: sitting / standing / away
   
-  30-minute sitting alert (speech or beep; de-duplicated)
+  - 30-minute sitting alert (speech or beep; de-duplicated)
   
-  Reset rule: standing/away for 4 minutes resets the sitting timer
+  - Reset rule: standing/away for 4 minutes resets the sitting timer
   
-  Live timeline plot for the last 24 hours (Sitting=green, Standing=blue, Away=red; alerts marked with a yellow star)
+  - Live timeline plot for the last 24 hours (Sitting=green, Standing=blue, Away=red; alerts marked with a yellow star)
   
-  Saves images and a plain-text log
+  - Saves images and a plain-text log
 
 #### Requirements:
 
-  Python 3.8+
+  - Python 3.8+
   
-  Webcam
+  - Webcam
   
-  Ollama running at http://localhost:11434
+  - Ollama running at http://localhost:11434
   
-  Models: moondream:latest and phi3:mini
+  - Models: moondream:latest and phi3:mini
   
-  OS: Linux recommended (speech/beep helpers are easiest there). Works on macOS/Windows with minor caveats.
+  - OS: Linux recommended (speech/beep helpers are easiest there). Works on macOS/Windows with minor caveats.
   
   Python Packages
   ```
@@ -269,13 +269,13 @@ In an earlier version of this class students experimented with foundational comp
   ```
   3. What happens
   
-  The script (by default) asynchronously restarts Ollama and pulls models.
+  - The script (by default) asynchronously restarts Ollama and pulls models.
   
-  It warms up by taking a single test photo and running the end-to-end pipeline.
+  - It warms up by taking a single test photo and running the end-to-end pipeline.
   
-  It enters a loop: capture → describe (Moondream) → classify (phi3:mini) → log & plot → sleep 120s.
+  - It enters a loop: capture → describe (Moondream) → classify (phi3:mini) → log & plot → sleep 120s.
   
-  It plays an alert after 30 minutes of continuous sitting (won’t spam more than once per minute).
+  - It plays an alert after 30 minutes of continuous sitting (won’t spam more than once per minute).
 
 #### Outputs & Files
   
@@ -310,8 +310,6 @@ In an earlier version of this class students experimented with foundational comp
 
 
 
-
-**\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
 ### Part C
 ### Test the interaction prototype
