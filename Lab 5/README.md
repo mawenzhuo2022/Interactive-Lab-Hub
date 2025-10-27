@@ -327,8 +327,7 @@ In an earlier version of this class students experimented with foundational comp
   Mostly because the image model doesn’t have enough data for low-light or side-angle postures. Also the background detection is very simple—it just looks for any human shape, so extra movement or other people cause wrong classification.
    
 1. Based on the behavior you have seen, what other scenarios could cause problems?
-
-  When the camera angle is wrong, the camera can't see the chair behind, when I wear dark clothes on a dark background
+   When the camera angle is wrong, the camera can't see the chair behind, when I wear dark clothes on a dark background
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
