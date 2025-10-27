@@ -280,7 +280,7 @@ In an earlier version of this class students experimented with foundational comp
 #### Outputs & Files
   
   - **`detection_images/`** — stores every captured image.  
-    Example filename: `detection_20250101_123000.jpg`
+    Example image files:
   <p float="left">
     <img src="detection_images/detection_20251026_204725.jpg" width="250" />
     <img src="detection_images/detection_20251026_220819.jpg" width="250" />
