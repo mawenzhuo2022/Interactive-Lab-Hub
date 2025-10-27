@@ -315,36 +315,39 @@ In an earlier version of this class students experimented with foundational comp
 ### Test the interaction prototype
 
 1. When does it what it is supposed to do?
-   
-   It works quite well when the lighting is normal and the camera can clearly see my full upper body. In those times, it correctly shows “person sitting” or “person standing,” and after 30 minutes of sitting it gives the alert message just like planned.
-   
-1. When does it fail?
-   
-   It fails sometimes when the light is too dim or when I move too fast. It also gets confused if someone walks behind me, because it still detects a person and doesn’t count me as away. Also, when someone is sitting behind me, and I am out of the range of the camera, it will detect people sitting as well.
-   
-1. When it fails, why does it fail?
 
-  Mostly because the image model doesn’t have enough data for low-light or side-angle postures. Also the background detection is very simple—it just looks for any human shape, so extra movement or other people cause wrong classification.
-   
-1. Based on the behavior you have seen, what other scenarios could cause problems?
-   When the camera angle is wrong, the camera can't see the chair behind, when I wear dark clothes on a dark background
+    It works quite well when the lighting is normal and the camera can clearly see my full upper body. In those times, it correctly shows “person sitting” or “person standing,” and after 30 minutes of sitting it gives the alert message just like planned.
 
-**\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
+2. When does it fail?
+
+    It fails sometimes when the light is too dim or when I move too fast. It also gets confused if someone walks behind me, because it still detects a person and doesn’t count me as away. Also, when someone is sitting behind me, and I am out of the range of the camera, it will detect people sitting as well.
+
+3. When it fails, why does it fail?
+
+    Mostly because the image model doesn’t have enough data for low-light or side-angle postures. Also the background detection is very simple—it just looks for any human shape, so extra movement or other people cause wrong classification.
+
+4. Based on the behavior you have seen, what other scenarios could cause problems?
+
+    When the camera angle is wrong, the camera can't see the chair behind, when I wear dark clothes on a dark background.
+
+**Think about someone using the system. Describe how you think this will work.**
+
 1. Are they aware of the uncertainties in the system?
 
-  Not really, because the system doesn’t show confidence or warnings.
-   
-1. How bad would they be impacted by a miss classification?
+    Not really, because the system doesn’t show confidence or warnings.
 
-  Not serious, but they might get wrong alerts or miss the reminder to stand up.
+2. How bad would they be impacted by a miss classification?
 
-1. How could change your interactive system to address this?
+    Not serious, but they might get wrong alerts or miss the reminder to stand up.
 
-  Add a confidence display or a short message explaining the reason of detection. Also change direction or add more directions. If one of them shows that the person is not sitting, then it get the result the person is not sitting.
-   
-1. Are there optimizations you can try to do on your sense-making algorithm.
+3. How could change your interactive system to address this?
 
-   Add asynchronous Ollama API call, better light correction, add more directions and camera numbers. 
+    Add a confidence display or a short message explaining the reason of detection. Also change direction or add more directions. If one of them shows that the person is not sitting, then it get the result the person is not sitting.
+
+4. Are there optimizations you can try to do on your sense-making algorithm.
+
+    Add asynchronous Ollama API call, better light correction, add more directions and camera numbers.
+
 
 ### Part D
 ### Characterize your own Observant system
