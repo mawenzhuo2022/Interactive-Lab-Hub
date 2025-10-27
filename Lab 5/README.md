@@ -200,109 +200,113 @@ In an earlier version of this class students experimented with foundational comp
 ### Part B
 ### Construct a simple interaction.
 
-### Human Posture Detection (Moondream + Ollama)
+### Human Posture Detection (Moondream + Ollama) [`detect_status.py`](./detect_status.py)
 
 #### Storyboard:
 
+#### Code:
+
+[`detect_status.py`](./detect_status.py)
+
 #### Description:
 
-A Python script that captures a webcam photo every 2 minutes, classifies posture as Sitting / Standing / Away, and plays an audio alert after 30 minutes of continuous sitting. Uses a two-step pipeline:
-
-Moondream generates a natural-language description of the image
-
-phi3:mini classifies the posture from that description.
-
+  A Python script that captures a webcam photo every 2 minutes, classifies posture as Sitting / Standing / Away, and plays an audio alert after 30 minutes of continuous sitting. Uses a two-step pipeline:
+  
+  Moondream generates a natural-language description of the image
+  
+  phi3:mini classifies the posture from that description.
+  
 #### Features：
-
-Automatic capture every 2 minutes
-
-Posture states: sitting / standing / away
-
-30-minute sitting alert (speech or beep; de-duplicated)
-
-Reset rule: standing/away for 4 minutes resets the sitting timer
-
-Live timeline plot for the last 24 hours (Sitting=green, Standing=blue, Away=red; alerts marked with a yellow star)
-
-Saves images and a plain-text log
+  
+  Automatic capture every 2 minutes
+  
+  Posture states: sitting / standing / away
+  
+  30-minute sitting alert (speech or beep; de-duplicated)
+  
+  Reset rule: standing/away for 4 minutes resets the sitting timer
+  
+  Live timeline plot for the last 24 hours (Sitting=green, Standing=blue, Away=red; alerts marked with a yellow star)
+  
+  Saves images and a plain-text log
 
 #### Requirements:
 
-Python 3.8+
-
-Webcam
-
-Ollama running at http://localhost:11434
-
-Models: moondream:latest and phi3:mini
-
-OS: Linux recommended (speech/beep helpers are easiest there). Works on macOS/Windows with minor caveats.
-
-Python Packages
-```
-pip install opencv-python requests matplotlib numpy\
-```
-
-Optional system packages (for audio alerts)
-```
-# Ubuntu/Debian
-sudo apt-get update
-sudo apt-get install -y espeak beep
-```
+  Python 3.8+
+  
+  Webcam
+  
+  Ollama running at http://localhost:11434
+  
+  Models: moondream:latest and phi3:mini
+  
+  OS: Linux recommended (speech/beep helpers are easiest there). Works on macOS/Windows with minor caveats.
+  
+  Python Packages
+  ```
+  pip install opencv-python requests matplotlib numpy\
+  ```
+  
+  Optional system packages (for audio alerts)
+  ```
+  # Ubuntu/Debian
+  sudo apt-get update
+  sudo apt-get install -y espeak beep
+  ```
 
 #### Quick Start:
-
-1. (Optional) Manually prep Ollama
-```
-ollama serve &
-ollama pull moondream:latest
-ollama pull phi3:mini
-```
-
-2. Run
-```
-python detect_status
-```
-3. What happens
-
-The script (by default) asynchronously restarts Ollama and pulls models.
-
-It warms up by taking a single test photo and running the end-to-end pipeline.
-
-It enters a loop: capture → describe (Moondream) → classify (phi3:mini) → log & plot → sleep 120s.
-
-It plays an alert after 30 minutes of continuous sitting (won’t spam more than once per minute).
+  
+  1. (Optional) Manually prep Ollama
+  ```
+  ollama serve &
+  ollama pull moondream:latest
+  ollama pull phi3:mini
+  ```
+  
+  2. Run
+  ```
+  python detect_status
+  ```
+  3. What happens
+  
+  The script (by default) asynchronously restarts Ollama and pulls models.
+  
+  It warms up by taking a single test photo and running the end-to-end pipeline.
+  
+  It enters a loop: capture → describe (Moondream) → classify (phi3:mini) → log & plot → sleep 120s.
+  
+  It plays an alert after 30 minutes of continuous sitting (won’t spam more than once per minute).
 
 #### Outputs & Files
-
-- **`detection_images/`** — stores every captured image.  
-  Example filename: `detection_20250101_123000.jpg`
-<p float="left">
-  <img src="detection_20251026_204725.jpg" width="250" />
-  <img src="detection_20251026_220819.jpg" width="250" />
-  <img src="detection_20251026_221139.jpg" width="250" />
-</p>
-
-- **`detection_log.txt`** — overwritten on each start; one line per detection.  
-  Example contents:
-  ```text
-  2025-10-26 21:34:23 - person away from seat
-  2025-10-26 21:37:56 - person away from seat
-  2025-10-26 21:41:18 - person away from seat
-  2025-10-26 21:44:41 - person away from seat
-  2025-10-26 21:48:03 - person away from seat
-  2025-10-26 21:51:25 - person sitting
-  2025-10-26 21:54:47 - person sitting
-  2025-10-26 21:58:12 - person sitting
-  2025-10-26 22:01:31 - person sitting
-  2025-10-26 22:04:54 - person sitting
-  2025-10-26 22:08:19 - person sitting
-  2025-10-26 22:11:39 - person sitting
-  2025-10-26 22:14:59 - person sitting
-  2025-10-26 22:18:32 - person sitting
-  2025-10-26 22:21:51 - person sitting - ALERT
-  2025-10-26 22:25:17 - person sitting - ALERT
-  ```
+  
+  - **`detection_images/`** — stores every captured image.  
+    Example filename: `detection_20250101_123000.jpg`
+  <p float="left">
+    <img src="detection_images/detection_20251026_204725.jpg" width="250" />
+    <img src="detection_images/detection_20251026_220819.jpg" width="250" />
+    <img src="detection_images/detection_20251026_221139.jpg" width="250" />
+  </p>
+  
+  - **`detection_log.txt`** — overwritten on each start; one line per detection.  
+    Example contents:
+    ```text
+    2025-10-26 21:34:23 - person away from seat
+    2025-10-26 21:37:56 - person away from seat
+    2025-10-26 21:41:18 - person away from seat
+    2025-10-26 21:44:41 - person away from seat
+    2025-10-26 21:48:03 - person away from seat
+    2025-10-26 21:51:25 - person sitting
+    2025-10-26 21:54:47 - person sitting
+    2025-10-26 21:58:12 - person sitting
+    2025-10-26 22:01:31 - person sitting
+    2025-10-26 22:04:54 - person sitting
+    2025-10-26 22:08:19 - person sitting
+    2025-10-26 22:11:39 - person sitting
+    2025-10-26 22:14:59 - person sitting
+    2025-10-26 22:18:32 - person sitting
+    2025-10-26 22:21:51 - person sitting - ALERT
+    2025-10-26 22:25:17 - person sitting - ALERT
+    ```
 
 
 
