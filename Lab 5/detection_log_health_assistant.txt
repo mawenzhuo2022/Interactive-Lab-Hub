@@ -1,0 +1,6 @@
+2025-10-28 00:07:47 - person sitting
+2025-10-28 00:10:01 - person sitting
+2025-10-28 00:11:48 - Posture Alert: bent over for >5 seconds
+2025-10-28 00:12:25 - Posture Alert: bent over for >5 seconds
+2025-10-28 00:12:46 - Posture Alert: bent over for >5 seconds
+2025-10-28 00:12:53 - Posture Alert: bent over for >5 seconds
