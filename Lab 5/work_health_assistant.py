@@ -309,7 +309,7 @@ class DetectStatus:
 
     def play_alert(self):
         """Trigger a voice alert for prolonged sitting via the FIFO."""
-        alert_message = f"You have been sitting for more than {self.SITTING_ALERT_MINUTES} minutes, please get up and move around"
+        alert_message = "You have been sitting for more than 30 minutes, please get up and move around"
         print(f"\nALERT: {alert_message}!")
         send_voice_alert(alert_message)
 
@@ -399,6 +399,11 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
     cup_on_table_start_time = None
     cup_on_table_alerted = False
     
+    # Cup status buffer system - 5 second buffer before state change
+    candidate_cup_state = None
+    candidate_state_start_time = None
+    confirmed_cup_state = None
+    
     # Cup status output tracking
     last_cup_status_output = 0
 
@@ -450,6 +455,10 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
                 no_cup_alerted = False
                 cup_on_table_start_time = None
                 cup_on_table_alerted = False
+                # Reset cup buffer system when user is away
+                candidate_cup_state = None
+                candidate_state_start_time = None
+                confirmed_cup_state = None
                 time.sleep(0.1)
                 continue
 
@@ -495,29 +504,66 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
 
             current_time = time.time()
             
+            # Cup status buffer system - only change state after 5 seconds of consistency
+            if candidate_cup_state != cup_class:
+                # New candidate state detected
+                candidate_cup_state = cup_class
+                candidate_state_start_time = current_time
+            elif candidate_state_start_time and (current_time - candidate_state_start_time) >= 5:
+                # Candidate state has been consistent for 5 seconds
+                if confirmed_cup_state != candidate_cup_state:
+                    # State is actually changing - reset alert timers only now
+                    previous_confirmed_state = confirmed_cup_state
+                    confirmed_cup_state = candidate_cup_state
+                    print(f"[CUP BUFFER] State changed from {previous_confirmed_state} to {confirmed_cup_state} after 5s buffer")
+                    
+                    # Reset alert timers only when state actually changes
+                    if confirmed_cup_state != 2:  # not "no cup"
+                        no_cup_start_time = None
+                        no_cup_alerted = False
+                    if confirmed_cup_state != 1:  # not "cup on table"
+                        cup_on_table_start_time = None
+                        cup_on_table_alerted = False
+                    
+                    # Start new timers for the new confirmed state
+                    if confirmed_cup_state == 2 and no_cup_start_time is None:
+                        no_cup_start_time = current_time
+                    elif confirmed_cup_state == 1 and cup_on_table_start_time is None:
+                        cup_on_table_start_time = current_time
+            
+            # Use confirmed state for display and alerts (fallback to candidate for initial state)
+            active_cup_state = confirmed_cup_state if confirmed_cup_state is not None else candidate_cup_state
+            
             # Output cup status every 5 seconds
             if current_time - last_cup_status_output >= 5:
                 cup_status_text = ""
                 alert_info = ""
                 
-                if cup_class == 0:
+                if active_cup_state == 0:
                     cup_status_text = "[CUP] Cup in hand (in use)"
-                elif cup_class == 1:
+                elif active_cup_state == 1:
                     cup_status_text = "[CUP] Cup on table (idle)"
                     if cup_on_table_start_time:
                         elapsed = int(current_time - cup_on_table_start_time)
                         remaining = max(0, 1200 - elapsed)  # 20 minutes = 1200 seconds
                         alert_info = f" | Idle {elapsed}s | {remaining}s until alert"
-                elif cup_class == 2:
+                elif active_cup_state == 2:
                     cup_status_text = "[NO CUP] No cup detected"
                     if no_cup_start_time:
                         elapsed = int(current_time - no_cup_start_time)
                         remaining = max(0, 600 - elapsed)  # 10 minutes = 600 seconds
                         alert_info = f" | No cup {elapsed}s | {remaining}s until alert"
                 else:
-                    cup_status_text = f"[UNKNOWN] Unknown cup state (class: {cup_class})"
+                    cup_status_text = f"[UNKNOWN] Unknown cup state (class: {active_cup_state})"
                 
-                print(f"[{datetime.now().strftime('%H:%M:%S')}] {cup_status_text}{alert_info}")
+                # Add buffer info if state is not yet confirmed
+                buffer_info = ""
+                if confirmed_cup_state != candidate_cup_state and candidate_state_start_time:
+                    buffer_elapsed = current_time - candidate_state_start_time
+                    buffer_remaining = max(0, 5 - buffer_elapsed)
+                    buffer_info = f" | Buffer: {buffer_remaining:.1f}s to confirm"
+                
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] {cup_status_text}{alert_info}{buffer_info}")
                 last_cup_status_output = current_time
 
             # Posture alert: bent over for more than 5 seconds
@@ -544,13 +590,10 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
                 bent_start_time = None
                 bent_alerted = False
 
-            # Hydration alert: no cup for more than 10 minutes
-            if cup_class == 2:  # no cup visible
-                if no_cup_start_time is None:
-                    no_cup_start_time = current_time
-                    no_cup_alerted = False
+            # Hydration alert: no cup for more than 10 minutes (only use confirmed state)
+            if confirmed_cup_state == 2 and no_cup_start_time:  # no cup confirmed
                 if not no_cup_alerted and (current_time - no_cup_start_time) >= 600:
-                    message = "You've been without water for over 10 minutes. Please grab a cup of water."
+                    message = "Please grab a cup of water, you have been without hydration for over 10 minutes"
                     print(f"\nALERT: No cup detected for >10 minutes. {message}")
                     send_voice_alert(message)
                     timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -564,18 +607,11 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
                     finally:
                         log_lock.release()
                     no_cup_alerted = True
-            else:
-                # Reset no-cup tracking if a cup appears or is on table
-                no_cup_start_time = None
-                no_cup_alerted = False
 
-            # Hydration alert: cup on table untouched for more than 20 minutes
-            if cup_class == 1:  # cup on table (not in hand)
-                if cup_on_table_start_time is None:
-                    cup_on_table_start_time = current_time
-                    cup_on_table_alerted = False
+            # Hydration alert: cup on table untouched for more than 20 minutes (only use confirmed state)
+            if confirmed_cup_state == 1 and cup_on_table_start_time:  # cup on table confirmed
                 if not cup_on_table_alerted and (current_time - cup_on_table_start_time) >= 1200:
-                    message = "Your water has been sitting untouched for 20 minutes. Time to take a drink."
+                    message = "Please take a drink, your water has been sitting untouched for over 20 minutes"
                     print(f"\nALERT: Cup untouched for >20 minutes. {message}")
                     send_voice_alert(message)
                     timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -589,10 +625,6 @@ def continuous_monitoring(cap, interpreter_posture, interpreter_cup, detector):
                     finally:
                         log_lock.release()
                     cup_on_table_alerted = True
-            else:
-                # Reset cup-on-table tracking if cup is picked up or removed
-                cup_on_table_start_time = None
-                cup_on_table_alerted = False
 
             # Small delay to throttle the loop
             time.sleep(0.1)
