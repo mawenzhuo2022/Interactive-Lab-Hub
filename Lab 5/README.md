@@ -426,35 +426,31 @@ The Work Health Assistant is a smart desktop companion designed to help users ma
 ### Core Features
 
 **Timeline = plain text log.** Items (3) Posture and (4) Hydration are **real-time**.  
-Item (1) runs **real-time detection** and captures **1 frame every 2 minutes** for **archive only** (not shown in the timeline).
+Item (1) runs **real-time detection** and captures **1 frame every 2 minutes** for **archive only**.
 
-#### 1) Activity Recognition (real-time; +1 frame/2 min for archive only)
-- **Inference:** Continuous classification of `sitting / standing / away`.
-- **Archive frame:** Capture **1 frame every 2 minutes** from the live stream for internal audit/debug (not included in the timeline).
-- **Timeline heartbeat:** Write **one state line every ~2 minutes** with the current dominant state.
+#### 1. Activity Recognition
+- Detects user presence when sitting on the chair.
+- Records user activity status every 2 minutes (e.g., sitting, standing, away).
+- Updates a daily activity log automatically.
 
-#### 2) Sitting Duration Monitoring (real-time)
-- **Counter:** Accumulate continuous **sitting** time; reset on **standing/away ≥ 10 s**.
-- **Alert threshold:** Sitting **> 30 minutes** **and** no stand/walk in the last **2 minutes** ⇒ trigger voice alert.
-- **Log line (immediate):**  
-  `YYYY-MM-DD HH:MM:SS - You have been sitting for more than 30 minutes, please get up and move around - ALERT`
-- **Cooldown:** **10 minutes**; any **standing/away ≥ 10 s** resets the counter.
+#### 2. Sitting Duration Monitoring
+- Tracks continuous sitting time.
+- If the user remains seated for more than 30 minutes without movement, the device plays a voice alert: “You have been sitting for more than 30 minutes, please get up and move around.”
 
-#### 3) Posture Correction (**real-time**)
-- **Sampling:** Synchronized with camera inference (≥10 Hz recommended).
-- **Heuristics (configurable):** trunk bend angle, forward head ratio, etc.
-- **Debounce:** Abnormal posture must **persist ≥ 5 s** to trigger.
-- **Log line (immediate):**  
-  `YYYY-MM-DD HH:MM:SS - Posture Alert: bent over for >5 seconds`
-- **Cooldown:** **≥ 5 minutes** between same-type posture alerts **or** once posture recovers for **≥ 10 s**.
+#### 3. Posture Correction
+- Identifies unhealthy or slouched sitting positions.
+- Provides real-time posture reminders: “Please straighten your back, maintain an upright posture.”
 
-#### 4) Hydration Reminder (**real-time**)
-- **Signals:** Cup presence on desk + “drink event” (liquid level/weight drop, tilt, or rim contact).
-- **No-cup alert:** **No cup ≥ 10 minutes** ⇒ log immediately:  
-  `YYYY-MM-DD HH:MM:SS - Hydration Alert: no cup for >10 minutes`
-- **Idle-cup alert:** Cup present but **no drink event ≥ 20 minutes** ⇒ log immediately:  
-  `YYYY-MM-DD HH:MM:SS - Hydration Alert: cup idle for >20 minutes`
-- **Debounce/Cooldown:** **≥ 15 minutes** between same-type hydration alerts; any valid drink (e.g., level drop ≥30 mL or valid tilt) resets timers.
+#### 4. Hydration Reminder
+- Monitors the presence of a cup on the desk.
+- If no cup is detected for 10 minutes, the device reminds: “Please grab a cup of water, you have been without hydration for over 10 minutes.”
+- If the cup is present but untouched for 20 minutes, it reminds: “Please take a drink, your water has been sitting untouched for over 20 minutes.”
+
+#### 5. Daily Activity Summary
+- Automatically generates an end-of-day activity summary, including:
+- Sitting, standing, and away times
+- Posture alerts
+- Hydration reminders
 
 #### 5) Daily Activity Summary
 - Automatically generates an end-of-day activity summary, including:
