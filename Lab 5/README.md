@@ -488,13 +488,16 @@ Item (1) runs **real-time detection** and captures **1 frame every 2 minutes** f
 - Integration with smartwatch data for heart rate and step tracking.
 - Customizable alert personalized options. (light, sounds, music)
 
+### Demo Video
+**Demo Video Link:** [https://drive.google.com/file/d/1KBYqBCIzCuANNuW4gPJ-pxu2OwrrpQUl/view?usp=drive_link](https://drive.google.com/file/d/1KBYqBCIzCuANNuW4gPJ-pxu2OwrrpQUl/view?usp=drive_link)
+
 ---
 
 #### 🧩 Quick Start
 
-Code : [`work_health_assistant.py`](./work_health_assistant.py)  
-Models : `model_sit.tflite`, `model_cup.tflite`  
-Output folders : `./detection_images_health_assistant/`, `detection_log_health_assistant.txt`
+- **Code:** [`work_health_assistant.py`](./work_health_assistant.py)  
+- **Models:** [`model_sit.tflite`](./model_sit.tflite), [`model_cup.tflite`](./model_cup.tflite)  
+- **Output folders:** [`./detection_images_health_assistant/`](./detection_images_health_assistant/), [`detection_log_health_assistant.txt`](./detection_log_health_assistant.txt)
 
 ---
 
