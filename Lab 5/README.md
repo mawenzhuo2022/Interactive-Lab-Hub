@@ -452,13 +452,6 @@ Item (1) runs **real-time detection** and captures **1 frame every 2 minutes** f
 - Posture alerts
 - Hydration reminders
 
-#### 5) Daily Activity Summary
-- Automatically generates an end-of-day activity summary, including:
-- Sitting, standing, and away times
-- Posture alerts
-- Hydration reminders
-
-
 ### Storyboard
 
 <img width="1642" height="914" alt="image" src="https://github.com/user-attachments/assets/f70e00e7-e1eb-4f59-ad92-f3233a7aad0b" />
