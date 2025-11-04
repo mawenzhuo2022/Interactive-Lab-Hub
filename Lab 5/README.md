@@ -632,4 +632,7 @@ All threads and camera resources will be released automatically.
 
 —— Jessie Chen
 
+"Overall, this desktop assistant is very practical. It reminds me about prolonged sitting, posture, and drinking water, helping me maintain a more structured routine. The project goals and functions are clearly defined, and all edge cases have been considered and resolved through technical solutions. The daily summary is clear, giving me the motivation to continue using it. However, the voice reminders are a bit awkward in an open workspace; I would appreciate features like mute and personalized thresholds. The water intake recognition is occasionally inaccurate; ideally, there would be a coaster for weighing or manual recording."
+
+—— Zijie Zhou
 
