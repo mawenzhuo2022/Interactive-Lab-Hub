@@ -454,7 +454,7 @@ Item (1) runs **real-time detection** and captures **1 frame every 2 minutes** f
 
 ### Storyboard
 
-<img width="1642" height="914" alt="image" src="https://github.com/user-attachments/assets/f70e00e7-e1eb-4f59-ad92-f3233a7aad0b" />
+![09df0bc4b3337fb3597f0b11cc9df0c1](https://github.com/user-attachments/assets/7f5353c2-f917-46dd-96e1-9d69465c583d)
 
 
 ### How It Works
