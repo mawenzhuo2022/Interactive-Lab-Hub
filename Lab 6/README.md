@@ -198,6 +198,12 @@ The system uses **MQTT** as the core communication protocol to enable distribute
 
 This design saves electricity while providing a user-friendly experience. Users don't need to constantly make noise; the system automatically detects human presence through **Auto Mode's intelligent sensing**.
 
+**Storyboard:**
+
+![Storyboard](Storyboard.png)
+
+
+
 ---
 
 ## Quick Start
