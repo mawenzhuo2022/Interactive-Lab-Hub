@@ -1,0 +1,5 @@
+[
+   { "color": "white", "count": 1 },
+   { "color": "black", "count": 2 },
+   { "color": "red", "count": 3 }
+ ]

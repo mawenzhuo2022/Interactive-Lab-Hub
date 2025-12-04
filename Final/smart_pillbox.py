@@ -240,6 +240,8 @@ class LEDAnimator:
         "idle": {"color": (0.0, 0.28, 0.0), "blink": True, "period": 0.9},
         # Matches the test_rgbtest.py ratio: red 1.0 / green 0.1 to avoid skewing green
         "processing": {"color": (1.0, 0.1, 0.0), "blink": True, "period": 0.3},
+        "warning": {"color": (1.0, 0.75, 0.0), "blink": True, "period": 0.25},
+        "alert": {"color": (1.0, 0.0, 0.0), "blink": False, "period": 0.0},
         "success": {"color": (0.0, 0.9, 0.0), "blink": False, "period": 0.0},
         "failure": {"color": (1.0, 0.0, 0.0), "blink": True, "period": 0.2},
         "off": {"color": (0.0, 0.0, 0.0), "blink": False, "period": 0.0},
@@ -415,6 +417,7 @@ class ButtonCameraTester:
         self.window_open = False
         self.noon_reminder_sent = False
         self.prompt_thread = None
+        self.alert_latched = False
 
         self.set_prescriptions(prescriptions or [])
         if self.analysis_enabled and requests is None:
@@ -508,6 +511,8 @@ class ButtonCameraTester:
 
     def _set_led_mode(self, mode: str, hold_seconds: float = 0.0):
         if not self.status_led:
+            return
+        if getattr(self, "alert_latched", False) and mode not in {"alert", "warning", "off"}:
             return
         try:
             self.status_led.set_mode(mode, hold_seconds=hold_seconds)
@@ -681,7 +686,11 @@ class ButtonCameraTester:
                         self._speak("Please open the pillbox before verifying.", voice="en")
                         self._set_led_mode("failure", hold_seconds=2.0)
                         continue
-                    self._set_led_mode("processing")
+                    if self.alert_latched:
+                        self._set_led_mode("warning")
+                        self.alert_latched = False
+                    else:
+                        self._set_led_mode("processing")
                     photo_path = self.capture_image()
                     led_success = False
                     validation_ok = False
@@ -709,7 +718,10 @@ class ButtonCameraTester:
                     if led_success:
                         self._set_led_mode("success", hold_seconds=3.0)
                     else:
-                        self._set_led_mode("failure", hold_seconds=3.0)
+                        if self.alert_latched:
+                            self._set_led_mode("alert")
+                        else:
+                            self._set_led_mode("failure", hold_seconds=3.0)
 
                 time.sleep(0.05)
         except KeyboardInterrupt:
@@ -910,6 +922,8 @@ Rules:
             "Warning: pill color or quantity is incorrect. Please verify before taking any dose.",
             voice="en"
         )
+        self.alert_latched = True
+        self._set_led_mode("alert")
         return False
 
     def _handle_analysis_output(self, photo_path: Path, analysis: dict):
@@ -944,5 +958,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

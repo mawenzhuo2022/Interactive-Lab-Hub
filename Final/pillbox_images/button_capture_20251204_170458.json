@@ -1,0 +1,19 @@
+{
+  "pills": [
+    {
+      "color": "red",
+      "count": 2
+    },
+    {
+      "color": "blue",
+      "count": 5
+    },
+    {
+      "color": "green",
+      "count": 3
+    }
+  ],
+  "image_path": "/home/pi/Interactive-Lab-Hub/Final/pillbox_images/button_capture_20251204_170458.jpg",
+  "model": "mock-ollama",
+  "timestamp": "2025-12-04T17:05:10"
+}

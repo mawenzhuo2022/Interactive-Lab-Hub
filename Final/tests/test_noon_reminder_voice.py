@@ -7,7 +7,7 @@ and exits immediately once the voice prompt fires.
 
 import sys
 from pathlib import Path
-from datetime import datetime as real_datetime
+from datetime import datetime as real_datetime, time as dtime
 from unittest import mock
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -96,6 +96,8 @@ def _setup_tester():
 
 
 def main():
+    original_window_end = smart_pillbox.DOSE_WINDOW_END
+    smart_pillbox.DOSE_WINDOW_END = dtime(12, 0)
     tester, cleanup = _setup_tester()
     try:
         print("=== Noon reminder (should prompt immediately) ===")
@@ -108,6 +110,7 @@ def main():
             return
         print("Reminder not triggered; please double-check the configuration.")
     finally:
+        smart_pillbox.DOSE_WINDOW_END = original_window_end
         cleanup()
 
 

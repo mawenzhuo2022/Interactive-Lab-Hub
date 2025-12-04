@@ -1,0 +1,15 @@
+{
+  "pills": [
+    {
+      "color": "red",
+      "count": 1
+    },
+    {
+      "color": "blue",
+      "count": 0
+    }
+  ],
+  "image_path": "/home/pi/Interactive-Lab-Hub/Final/pillbox_images/button_capture_20251204_151431.jpg",
+  "model": "moondream:latest",
+  "timestamp": "2025-12-04T15:15:36"
+}
