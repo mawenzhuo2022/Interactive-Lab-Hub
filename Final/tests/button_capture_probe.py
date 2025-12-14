@@ -33,8 +33,9 @@ else:
     QWIIC_IMPORT_ERROR = None
 
 
-CONFIG_PATH = Path(__file__).with_name("pillbox_config.json")
-IMAGE_DIR = Path(__file__).with_name("pillbox_images")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+CONFIG_PATH = PROJECT_ROOT / "pillbox_config.json"
+IMAGE_DIR = PROJECT_ROOT / "pillbox_images"
 DEBOUNCE_SECONDS = 0.35
 
 CAMERA_DEFAULT = {
