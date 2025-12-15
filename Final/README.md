@@ -348,6 +348,6 @@ Each capture may produce:
 
 ### 5) Video of someone using the project
 
-- [User test video(Google Drive)](https://drive.google.com/file/d/19C83XTmPfmUSvJGmkHZHVhJmlEPwLQbx/view?usp=drive_link)**
+- [User test video(Google Drive)](https://drive.google.com/file/d/19C83XTmPfmUSvJGmkHZHVhJmlEPwLQbx/view?usp=drive_link)
 
  
